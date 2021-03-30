@@ -1,0 +1,49 @@
+h1{
+    background-color: #184d47;
+    color: #e6dd3b;
+    height: 60px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+}
+header ul{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e6dd3bc2;
+}
+header ul a{
+    text-decoration: none;
+    color: #184d47;
+}
+
+main div{
+    border: solid;
+    border-color: #289672;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 550;
+    background-color: #8ee4c6
+}
+
+main div h3{
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #184d47;
+    color: #e6dd3b;
+    padding: 5px;
+    margin-bottom: 5px;
+
+}
+
+footer{
+    background-color: #184d47;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
