@@ -46,17 +46,21 @@ age();
 
 //Q2
 
-let homeLocation = prompt('do I live in zarqa?');
-homeLocation = homeLocation.toLowerCase();
-if (homeLocation === 'y' || homeLocation === 'yes') {
-  //console.log('great, I live in zarqa');
-  alert('great gessing');
-  counter++;
-} else if (homeLocation === 'n' || homeLocation === 'no') {
-  alert('oh no');
-} else {
-  alert('please answer with only yes/y or no/n with no spaces');
+let homeLocation = '';
+function home() {
+  homeLocation = prompt('do I live in zarqa?');
+  homeLocation = homeLocation.toLowerCase();
+  if (homeLocation === 'y' || homeLocation === 'yes') {
+    //console.log('great, I live in zarqa');
+    alert('great gessing');
+    counter++;
+  } else if (homeLocation === 'n' || homeLocation === 'no') {
+    alert('oh no');
+  } else {
+    alert('please answer with only yes/y or no/n with no spaces');
+  }
 }
+home();
 
 //Q3
 let turkey = prompt('do I love turkey?');
