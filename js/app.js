@@ -63,18 +63,21 @@ function home() {
 home();
 
 //Q3
-let turkey = prompt('do I love turkey?');
-turkey = turkey.toLowerCase();
-if (turkey === 'y' || turkey === 'yes') {
-  //console.log('great, I really love turkey');
-  alert('great gessing');
-  counter++;
-} else if (turkey === 'n' || turkey === 'no') {
-  alert('oh no');
-} else {
-  alert('please answer with only yes/y or no/n with no spaces');
+let turkey = '';
+function travel() {
+  turkey = prompt('do I love turkey?');
+  turkey = turkey.toLowerCase();
+  if (turkey === 'y' || turkey === 'yes') {
+    //console.log('great, I really love turkey');
+    alert('great gessing');
+    counter++;
+  } else if (turkey === 'n' || turkey === 'no') {
+    alert('oh no');
+  } else {
+    alert('please answer with only yes/y or no/n with no spaces');
+  }
 }
-
+travel();
 //Q4
 let galaxy = prompt('do I love choclate?');
 galaxy = galaxy.toLowerCase();
