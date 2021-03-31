@@ -79,18 +79,21 @@ function travel() {
 }
 travel();
 //Q4
-let galaxy = prompt('do I love choclate?');
-galaxy = galaxy.toLowerCase();
-if (galaxy === 'y' || galaxy === 'yes') {
-  //console.log('great, I really love galaxy choclate');
-  alert('great gessing');
-  counter++;
-} else if (galaxy === 'n' || galaxy === 'no') {
-  alert('oh no');
-} else {
-  alert('please answer with only yes/y or no/n with no spaces');
+let galaxy = '';
+function galaxyFunction() {
+  galaxy = prompt('do I love choclate?');
+  galaxy = galaxy.toLowerCase();
+  if (galaxy === 'y' || galaxy === 'yes') {
+    //console.log('great, I really love galaxy choclate');
+    alert('great gessing');
+    counter++;
+  } else if (galaxy === 'n' || galaxy === 'no') {
+    alert('oh no');
+  } else {
+    alert('please answer with only yes/y or no/n with no spaces');
+  }
 }
-
+galaxyFunction();
 //Q5
 let design = prompt('do I love designing?');
 design = design.toLowerCase();
