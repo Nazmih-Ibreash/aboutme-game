@@ -97,8 +97,61 @@ if (design === 'y' || design === 'yes') {
     alert('please answer with only yes/y or no/n with no spaces');
 }
 
-if (counter > 2) {
-    alert('very good ' + userName + ' your score is ' + counter + ' of 5');
+
+//Q6
+let guessNum = prompt('guess a number between 0 & 10, you have 4 opportunities ');
+let Num = 4;
+
+for (let index = 0; index < 4; index++) {
+    if (guessNum < Num) {
+        alert('too low, try a different number');
+        guessNum = prompt('guess a number between 0 & 10, you have 4 opportunities ');
+    } else if (guessNum > Num) {
+        alert('too high, try a different number');
+        guessNum = prompt('guess a number between 0 & 10, you have 4 opportunities ');
+    }
+}
+if (guessNum == Num) {
+    alert('excelent guessing :)');
+    //console.log('great, actully I chose the number 4');
+
+    counter++;
+}
+else if (guessNum != Num) {
+    alert('oh no! the number is ' + Num);
+}
+
+
+//Q7
+
+let fruits = ['banana', 'watermelon', 'pineapple', 'mango'];
+let guessFruit = prompt('guess kind of fruits that I like, you have 6 opportunities ');
+
+let attempts = 0;
+let i = 0;
+for (; attempts < 5; attempts++) {
+    for (; i < fruits.length; i++) {
+        if (guessFruit === fruits[i]) {
+            break;
+        }
+    }
+    if (i === fruits.length) {
+        guessFruit = prompt('guess kind of fruits that I like, you have 6 opportunities ');
+    } else {
+        alert('great :) there are the list of fruites I like: banana , watermelon , pineapple , mango :)');
+        //console.log('great, actully I like banana , watermelon , pineapple and mango');
+        counter++;
+        break;
+    }
+    if (attempts == 5) {
+        alert('oh no! there are the list of fruites I like: banana , watermelon , pineapple , mango :)');
+    }
+}
+
+
+
+if (counter > 3) {
+    alert('very good ' + userName + ' your score is ' + counter + ' of 7');
 } else {
-    alert('actully you dont know me :) ' + userName + ' your score is ' + counter + ' of 5');
+    alert('actully you dont know me :) ' + userName + ' your score is ' + counter + ' of 7');
 }
