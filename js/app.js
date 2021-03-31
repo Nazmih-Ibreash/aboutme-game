@@ -95,17 +95,21 @@ function galaxyFunction() {
 }
 galaxyFunction();
 //Q5
-let design = prompt('do I love designing?');
-design = design.toLowerCase();
-if (design === 'y' || design === 'yes') {
-  //console.log('great, actully I am a Humble designer');
-  alert('great gessing');
-  counter++;
-} else if (design === 'n' || design === 'no') {
-  alert('oh no');
-} else {
-  alert('please answer with only yes/y or no/n with no spaces');
+let design = '';
+function designFunction() {
+  design = prompt('do I love designing?');
+  design = design.toLowerCase();
+  if (design === 'y' || design === 'yes') {
+    //console.log('great, actully I am a Humble designer');
+    alert('great gessing');
+    counter++;
+  } else if (design === 'n' || design === 'no') {
+    alert('oh no');
+  } else {
+    alert('please answer with only yes/y or no/n with no spaces');
+  }
 }
+designFunction();
 
 //Q6
 let guessNum = prompt(
