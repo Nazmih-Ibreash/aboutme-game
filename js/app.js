@@ -142,54 +142,57 @@ function guessNumFunction() {
 
 guessNumFunction();
 //Q7
+let fruits = [];
+function guessFruitFunction() {
+  fruits = ['banana', 'watermelon', 'pineapple', 'mango'];
+  let guessFruit = '';
 
-let fruits = ['banana', 'watermelon', 'pineapple', 'mango'];
-let guessFruit = '';
-
-// let i = 0;
-attempts: for (let attempts = 0; attempts < 6; attempts++) {
-  //   for (; i < fruits.length; i++) {
-  //     if (guessFruit === fruits[i]) {
-  //       break;
-  //     }
-  //   }
-  guessFruit = prompt(
-    'guess kind of fruits that I like, you have 6 opportunities '
-  );
-  for (let j = 0; j < fruits.length; j++) {
-    if (fruits[j] === guessFruit) {
-      alert(
-        'great :) there are the list of fruites I like: banana , watermelon , pineapple , mango :)'
-      );
-      counter++;
-      break attempts;
+  // let i = 0;
+  attempts: for (let attempts = 0; attempts < 6; attempts++) {
+    //   for (; i < fruits.length; i++) {
+    //     if (guessFruit === fruits[i]) {
+    //       break;
+    //     }
+    //   }
+    guessFruit = prompt(
+      'guess kind of fruits that I like, you have 6 opportunities '
+    );
+    for (let j = 0; j < fruits.length; j++) {
+      if (fruits[j] === guessFruit) {
+        alert(
+          'great :) there are the list of fruites I like: banana , watermelon , pineapple , mango :)'
+        );
+        counter++;
+        break attempts;
+      }
     }
-  }
-  if (attempts === 5) {
-    alert('sorry no more tries ' + fruits);
-  } else if (attempts < 6) {
-    alert('this is wrong');
-  }
+    if (attempts === 5) {
+      alert('sorry no more tries ' + fruits);
+    } else if (attempts < 6) {
+      alert('this is wrong');
+    }
 
-  //   if (i === fruits.length) {
-  //     // alert('Your guess is wrong');
-  //     guessFruit = prompt(
-  //       'guess kind of fruits that I like, you have 6 opportunities '
-  //     );
-  //   } else {
-  //     alert(
-  //       'great :) there are the list of fruites I like: banana , watermelon , pineapple , mango :)'
-  //     );
-  //     //console.log('great, actully I like banana , watermelon , pineapple and mango');
-  //     counter++;
-  //     break;
-  //   }
-  //   if (attempts == 5) {
-  //     alert(
-  //       'oh no! there are the list of fruites I like: banana , watermelon , pineapple , mango :)'
-  //     );
-  //   }
+    //   if (i === fruits.length) {
+    //     // alert('Your guess is wrong');
+    //     guessFruit = prompt(
+    //       'guess kind of fruits that I like, you have 6 opportunities '
+    //     );
+    //   } else {
+    //     alert(
+    //       'great :) there are the list of fruites I like: banana , watermelon , pineapple , mango :)'
+    //     );
+    //     //console.log('great, actully I like banana , watermelon , pineapple and mango');
+    //     counter++;
+    //     break;
+    //   }
+    //   if (attempts == 5) {
+    //     alert(
+    //       'oh no! there are the list of fruites I like: banana , watermelon , pineapple , mango :)'
+    //     );
+    //   }
+  }
 }
+guessFruitFunction();
 
 if (counter > 3) {
   alert('very good ' + userName + ' your score is ' + counter + ' of 7');
