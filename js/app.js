@@ -112,33 +112,35 @@ function designFunction() {
 designFunction();
 
 //Q6
-let guessNum = prompt(
-  'guess a number between 0 & 10, you have 4 opportunities '
-);
-let Num = 4;
+let guessNum = '';
+function guessNumFunction() {
+  guessNum = prompt('guess a number between 0 & 10, you have 4 opportunities ');
+  let Num = 4;
 
-for (let index = 0; index < 4; index++) {
-  if (guessNum < Num) {
-    alert('too low, try a different number');
-    guessNum = prompt(
-      'guess a number between 0 & 10, you have 4 opportunities '
-    );
-  } else if (guessNum > Num) {
-    alert('too high, try a different number');
-    guessNum = prompt(
-      'guess a number between 0 & 10, you have 4 opportunities '
-    );
+  for (let index = 0; index < 4; index++) {
+    if (guessNum < Num) {
+      alert('too low, try a different number');
+      guessNum = prompt(
+        'guess a number between 0 & 10, you have 4 opportunities '
+      );
+    } else if (guessNum > Num) {
+      alert('too high, try a different number');
+      guessNum = prompt(
+        'guess a number between 0 & 10, you have 4 opportunities '
+      );
+    }
+  }
+  if (guessNum === Num) {
+    alert('excelent guessing :)');
+    //console.log('great, actully I chose the number 4');
+
+    counter++;
+  } else if (guessNum !== Num) {
+    alert('oh no! the number is ' + Num);
   }
 }
-if (guessNum === Num) {
-  alert('excelent guessing :)');
-  //console.log('great, actully I chose the number 4');
 
-  counter++;
-} else if (guessNum !== Num) {
-  alert('oh no! the number is ' + Num);
-}
-
+guessNumFunction();
 //Q7
 
 let fruits = ['banana', 'watermelon', 'pineapple', 'mango'];
