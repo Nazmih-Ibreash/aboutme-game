@@ -1,25 +1,5 @@
 'use strict';
 
-/* let userName = 'nazmia';
-
-let age = prompt('what is your age?');
-console.log('before ' + typeof age);//here we put + and it works
-//here if we enter a text 
-
-age = parseInt(age); /***** WAY 1 */
-//here will return a Nan
-//Nan means: not a number
-//age = Number(); /****** WAY 2 */
-//console.log('after ', typeof age);//here we put , and it works also
-
-/*************************** Confirm box */
-/*let feeling = confirm('what is your feeling');
-
-if (feeling) {
-    console.log('great');
-} else {
-    console.log('hope you feel well');
-}*/
 let userName = prompt('what is your name?');
 alert('hello ' + userName);
 
@@ -139,21 +119,15 @@ function guessNumFunction() {
     alert('oh no! the number is ' + Num);
   }
 }
-
 guessNumFunction();
+
 //Q7
 let fruits = [];
 function guessFruitFunction() {
   fruits = ['banana', 'watermelon', 'pineapple', 'mango'];
   let guessFruit = '';
 
-  // let i = 0;
   attempts: for (let attempts = 0; attempts < 6; attempts++) {
-    //   for (; i < fruits.length; i++) {
-    //     if (guessFruit === fruits[i]) {
-    //       break;
-    //     }
-    //   }
     guessFruit = prompt(
       'guess kind of fruits that I like, you have 6 opportunities '
     );
@@ -171,25 +145,6 @@ function guessFruitFunction() {
     } else if (attempts < 6) {
       alert('this is wrong');
     }
-
-    //   if (i === fruits.length) {
-    //     // alert('Your guess is wrong');
-    //     guessFruit = prompt(
-    //       'guess kind of fruits that I like, you have 6 opportunities '
-    //     );
-    //   } else {
-    //     alert(
-    //       'great :) there are the list of fruites I like: banana , watermelon , pineapple , mango :)'
-    //     );
-    //     //console.log('great, actully I like banana , watermelon , pineapple and mango');
-    //     counter++;
-    //     break;
-    //   }
-    //   if (attempts == 5) {
-    //     alert(
-    //       'oh no! there are the list of fruites I like: banana , watermelon , pineapple , mango :)'
-    //     );
-    //   }
   }
 }
 guessFruitFunction();
@@ -199,9 +154,9 @@ if (counter > 3) {
 } else {
   alert(
     'actully you dont know me :) ' +
-      userName +
-      ' your score is ' +
-      counter +
-      ' of 7'
+    userName +
+    ' your score is ' +
+    counter +
+    ' of 7'
   );
 }
